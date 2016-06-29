@@ -1,0 +1,17 @@
+<ion-view view-title="Concerte Medidas">
+  <ion-content ng-controller="ConverteControlador">
+    <div class="list card">
+      <div class="padding">
+        <div class="item item-input">
+          <input type="text" placeholder="Centímetros" ng-model="centimetros">
+        </div>
+        <div class="item item-input">
+          <input type="text" placeholder="Polegadas" ng-model="polegadas">
+        </div>
+        <button class="button button-block button-positive" ng-click="cm2pol()">Centímetros para Polegadas</button>
+        <button class="button button-block button-positive" ng-click="pol2cm()">Polegadas para Centímetros</button>
+      </div>
+  
+
+    </ion-content>
+  </ion-view>

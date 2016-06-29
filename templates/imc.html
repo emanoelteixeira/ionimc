@@ -1,0 +1,22 @@
+<ion-view view-title="Cáculo do IMC">
+  <ion-content ng-controller="ImcControlador">
+    <div class="list card">
+      <div class="padding">
+        <div class="item item-input">
+          <input type="text" placeholder="Digite a altura" ng-model="altura">
+        </div>
+        <div class="item item-input">
+          <input type="text" placeholder="Digite o peso" ng-model="peso">
+        </div>
+        <button class="button button-block button-positive" ng-click="calcula()">Calcula</button>
+        {{imc}}<br/>
+        {{situacao}}<br/>
+        <button class="button button-block button-positive" ng-click="vaiParaConversao()">Conversões</button>
+        <ul>
+          <li ng-repeat="elemento in lista">
+             {{elemento.peso}}kg {{elemento.altura}}m {{elemento.situacao}}
+          </li>
+        </ul>
+      </div>
+    </ion-content>
+  </ion-view>
